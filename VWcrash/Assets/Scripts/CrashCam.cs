@@ -18,8 +18,8 @@ public class CrashCam : MonoBehaviour
 	private float movement;
 	private float prevPos;
 	private float newPos;
-	//private float fwd;
 	private float moveResult;
+
 	
 	// Use this for initialization
 	void Start () 
@@ -30,12 +30,11 @@ public class CrashCam : MonoBehaviour
 	// Update is called once per frame
 	void FixedUpdate () 
 	{
+
 		float y = Player.CurrentPlayer.transform.position.y + cameraHeight;  // Camera a bit heigher than the character.  
 		
 		newPos = (Mathf.Round(Player.CurrentPlayer.transform.position.z * 10) / 10);
 		movement = (newPos - prevPos);
-		
-		Debug.Log(movement);
 
 		if (movement < 0)  // Checks to see if player is moving toward camera.
 		{
@@ -85,6 +84,5 @@ public class CrashCam : MonoBehaviour
 	void LateUpdate()
 	{
 		prevPos = (Mathf.Round(Player.CurrentPlayer.transform.position.z * 10) / 10);
-		//fwd = Player.CurrentPlayer.transform.forward.z;
 	}
 }
