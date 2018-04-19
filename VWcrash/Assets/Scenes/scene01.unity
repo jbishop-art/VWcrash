@@ -470,7 +470,7 @@ Transform:
   m_GameObject: {fileID: 1282102498}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 10.030005}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -572,5 +572,7 @@ MonoBehaviour:
   xOffsetLeft: -2
   xOffsetRight: 2
   cameraDistance: 5
+  cameraDistanceOffset: 6
   cameraHeight: 2
-  dampTime: 0.15
+  dampTimeForward: 0.75
+  dampTimeBackward: 0.25
