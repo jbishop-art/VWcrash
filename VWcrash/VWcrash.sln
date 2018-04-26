@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VWcrash", "Assembly-CSharp.csproj", "{CDD77E67-C93B-290F-0369-233C465775D1}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VWcrash", "VWcrash.csproj", "{36C1F7A5-C85C-6217-8C84-91BD5EAA15CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +9,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CDD77E67-C93B-290F-0369-233C465775D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CDD77E67-C93B-290F-0369-233C465775D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CDD77E67-C93B-290F-0369-233C465775D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CDD77E67-C93B-290F-0369-233C465775D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36C1F7A5-C85C-6217-8C84-91BD5EAA15CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36C1F7A5-C85C-6217-8C84-91BD5EAA15CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36C1F7A5-C85C-6217-8C84-91BD5EAA15CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36C1F7A5-C85C-6217-8C84-91BD5EAA15CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal

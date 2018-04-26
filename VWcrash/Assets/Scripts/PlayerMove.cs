@@ -17,8 +17,7 @@ public class PlayerMove : MonoBehaviour
 	private float moveResultY;
 	private float fwdY;
 
-	public bool canSpin;
-
+    public ParticleSystem whirl;
 
 	// Use this for initialization
 	void Start ()
@@ -27,10 +26,9 @@ public class PlayerMove : MonoBehaviour
 		jump = new Vector3(0.0f, 2.0f, 0.0f);
 	}
 
-	void OnCollisionStay()
+	void OnCollisionEnter()
 	{
 		isGrounded = true;
-		canSpin = true;
 	}
 	
 	// Update is called once per frame
@@ -52,10 +50,9 @@ public class PlayerMove : MonoBehaviour
 			rb.AddForce(jump * jumpforce, ForceMode.Impulse);
 		}
 
-		if (Input.GetKeyDown(KeyCode.Return) && canSpin)
+		if (Input.GetKeyDown(KeyCode.Return))
 		{
-			canSpin = false;
-			//StartCoroutine("rotateSpin");
+            whirl.Play();
 		}
 	}
 
@@ -64,14 +61,5 @@ public class PlayerMove : MonoBehaviour
 		prevPosY = transform.position.y;
 		fwdY = transform.up.y;
 	}
-
-	// IEnumerator rotateSpin()
-	// {
-
-	// 	// transform.Rotate(Vector3.up, 120.0f);
-	// 	// yield return new WaitForSeconds(0.1f);
-	// 	// transform.Rotate(Vector3.up, 120.0f);
-	// 	// yield return new WaitForSeconds(0.1f);
-	// 	// transform.Rotate(Vector3.up, 120.0f);
-	// }
+	
 }

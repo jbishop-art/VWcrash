@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - BoxSides
+  - BoxTopBottom
+  - Bad
+  - PowerBoxTopBottom
+  - PowerBoxSides
+  - Platform
   layers:
   - Default
   - TransparentFX
